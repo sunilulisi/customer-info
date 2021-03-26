@@ -1,0 +1,24 @@
+{
+  "customers": [
+    {
+      "id": 1,
+      "customerName": "Suneel",
+      "location": "Hyderabad"
+    },
+    {
+      "id": 2,
+      "customerName": "Kumar",
+      "location": "Bangalore"
+    },
+    {
+      "id": 3,
+      "customerName": "Suresh",
+      "location": "Chennai"
+    },
+    {
+      "id": 4,
+      "customerName": "Raju K",
+      "location": "HYDERABAD"
+    }
+  ]
+}

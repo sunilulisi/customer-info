@@ -1,7 +1,10 @@
 import {useState} from 'react'
-const AddEditCustomer=({onAdd})=> {
+const AddCustomer=({onAdd})=> {
     const [customerName, setCustomerName] = useState('')
+    //const [customerId, setCustomerId] = useState()
     const [location, setLocation] = useState('')
+
+    
     const onSubmit = (e) => {
         e.preventDefault()
         if(!customerName) {
@@ -11,8 +14,8 @@ const AddEditCustomer=({onAdd})=> {
         onAdd({customerName, location})
         setCustomerName('')
         setLocation('')
-        
     }
+    
     return(
         <form className = 'add-form' onSubmit= {onSubmit}>
         <div className='form-control'>
@@ -24,9 +27,9 @@ const AddEditCustomer=({onAdd})=> {
             <input type='text' placeholder='Location'value={location} onChange={(e)=> setLocation(e.target.value)}></input>
         </div>
     
-        <input type='submit' value='Save Customer' className='btn btn-block'/>
+        <input type='submit' value='Add Customer' className='btn btn-block'/>
     </form>
     )
 
 }
-export default AddEditCustomer
+export default AddCustomer
